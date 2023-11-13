@@ -21,7 +21,7 @@ const App = () => {
     }
   };
 
-  const toggleIsTodoComplete = (todoId) => {
+  const toggleIsTodoCompleted = (todoId) => {
     setTodos(
       todos.map((todo) => {
         if (todo.id !== todoId) return todo;
@@ -43,7 +43,7 @@ const App = () => {
       <InputField text={text} handleInput={setText} handleSubmit={addTodo} />
       <TodoList
         todos={todos}
-        toggleIsTodoComplete={toggleIsTodoComplete}
+        toggleIsTodoCompleted={toggleIsTodoCompleted}
         deleteTodo={deleteTodo}
       />
     </div>

@@ -2,7 +2,7 @@ const TodoItem = ({
   id,
   text,
   isCompleted,
-  toggleIsTodoComplete,
+  toggleIsTodoCompleted,
   deleteTodo,
 }) => {
   return (
@@ -10,7 +10,7 @@ const TodoItem = ({
       <input
         type="checkbox"
         checked={isCompleted}
-        onChange={() => toggleIsTodoComplete(id)}
+        onChange={() => toggleIsTodoCompleted(id)}
       />
       <span>{text}</span>
       <span className="delete" onClick={() => deleteTodo(id)}>
