@@ -4,18 +4,7 @@ import {
   AnyAction,
   PayloadAction,
 } from '@reduxjs/toolkit';
-
-type Todo = {
-  id: string;
-  title: string;
-  completed: boolean;
-};
-
-type TodosState = {
-  list: Todo[];
-  loading: boolean;
-  error: string | null;
-};
+import { Todo, TodosState } from '../types/types';
 
 export const fetchTodos = createAsyncThunk<
   Todo[],
